@@ -4,7 +4,7 @@ const comeback = document.querySelector('#comeback'),
 search.classList.add('comebak_search');
 window.addEventListener('scroll', () => {
     console.log(pageYOffset);
-    if (pageYOffset > 500 && getCookie('comback') != '101'){
+    if (pageYOffset > 500 && getCookie('comback') != '101' && window.innerWidth > 800){
         document.body.appendChild(search);
         document.cookie = "comback=101";
     }
